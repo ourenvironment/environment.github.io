@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Environment | About</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="logo.jpeg" width="170px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="txt">
+            <h1>Our Founder</h1>
+            <a href="profile.html"><img src="IMG_oygln6.jpg" width="400px"></a>
+            <h2>'Environment' website is sponsered by Himanshu Anand.<br>
+            This website is made for provide essential needs like news ,live score,government services etc.
+        Enjoy with Animated Stories and Essay Notes.<br>
+        THE HEADQUATER of Environment is in BIHAR.<br>
+        THANKS - Environment team.
+     </h2>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "500px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                    
+                }
+            }
+        </script>
+</body>
+</html>

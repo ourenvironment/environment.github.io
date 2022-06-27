@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Environment | Contact us </title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="logo.jpeg" width="170px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            <div class="action">
+                <div class="profile" onclick="menuToggle();"><img src="IMG_oygln6.jpg" alt="">
+                </div>
+                <div class="menu">
+                  <h3>Himanshu Anand<br> <span>Web designer</span></h3>
+                  <ul>
+                      <li><img src="user.png" width="50px"><a href="profile.html">Admin profile</a></li>
+                      <li><img src="trolley.png" width="50px"><a href="product.html">Aff. Products</a></li>
+                      <li><img src="send.png" width="50px"><a href="contact.html">Contact</a></li>
+                      <li><img src="about.png" width="50px"><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+            </div>
+            <script>
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.menu');
+                toggleMenu.classList.toggle('active')
+            }
+            
+            </script>
+        </div>
+        <div class="social">
+            <ul id="flw">
+                <li id="sgap" style="--clr:#1879f8;">
+                    <a href="https://mobile.twitter.com/aanand6himanshu"><i class="fa-brands fa-twitter"></i></a>
+
+
+                </li>
+                <li id="sgap" style="--clr:#f60b0b;">
+                    <a href="https://youtube.com/channel/UC_bO1BwLwBFw-Uxep7WV7-Q"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </li>
+
+                <li id="sgap" style="--clr:#f2275a;">
+                    <a href="https://www.instagram.com/himanshu03anand/"><i><i
+                                class="fa-brands fa-instagram"></i></i></a>
+                </li>
+                <li id="sgap" style="--clr:#0408fd;">
+                    <a href="#"><i><i class="fa-brands fa-linkedin"></i></i></a>
+                </li>
+                <li id="sgap" style="--clr:#fc1010;">
+                    <a href="https://in.pinterest.com/himanshu03anand/"><i><i
+                                class="fa-brands fa-pinterest"></i></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="contain">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download App for Android and ios</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.jpeg">
+                    <p>make the pleasure</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li> Coupons</li>
+                        <li>Blog posts</li>
+                        <li>join affiliats</li>
+
+                    </ul>
+                    <p>make the pleasure</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3> Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/himanshu03anand/"> Instagram</a></li>
+                        <li><a href="https://mobile.twitter.com/aanand6himanshu"> Twitter</a></li>
+                        <li><a href="https://youtube.com/channel/UC_bO1BwLwBFw-Uxep7WV7-Q"> You tube</a></li>
+                        <li><a href="https://in.pinterest.com/himanshu03anand/"> Pinterest</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <p>@copyright 2022 - Environment</p>
+    </div>
+    <!-- ----------menu------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "500px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

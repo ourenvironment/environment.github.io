@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg,#f2f4f6,#89dff9);
+}
+.logo img{
+    position: fixed;
+    margin-top: -10px;
+    width: 150px;
+    
+}
+.text{
+    text-align: center;
+    margin-top: 80px;
+}
+    
+
+.text h1{
+    color: rgb(8, 206, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    
+}
+.text h3{
+    color: rgb(186, 254, 92);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+.bll{
+    margin-top: 30px;
+    margin-bottom: 200px;
+    display: inline-block;
+    
+   
+    
+    
+}
+
+.bll a{
+    font-size: 30px;
+    text-decoration: none;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+#tbtn{
+    
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-color: #0547d6;
+    padding: 10px 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 300px;
+    height: 50px;
+    
+}
+
+
+
+.bgimg{
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: px;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+    
+    
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+    
+    margin-top: 10px;
+    
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 25px;
+    
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(78, 254, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav ul li a:hover{
+    color: rgb(255, 238, 0);
+
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*------media query for menu ------*/
+
+@media only screen and (max-width:800px){
+    
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col8{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col9 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+    
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .fotter-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    
+}
+.footer-col-1{
+    flex-basis: 30%;
+    
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+/* ------profile------ */
+.action{
+    position: fixed;
+    top: 20px;
+    right: 100px;
+}
+.action .profile{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.action .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action .menu{
+    position: absolute;
+    top: 120px;
+    right: -10px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg,#1bd5f6,#1305a8);
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .menu.active{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+.action .menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg,#1867e7,#0490ba);
+    transform: rotate(45deg);
+}
+.action .menu h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(48, 250, 3);
+    line-height: 1.2em;
+}
+.action .menu h3 span{
+    font-size: 14px;
+    color: #f8e404;
+    font-weight: 700;
+
+}
+.action .menu ul li{
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    
+
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 5;
+    transition: 0.5s;
+
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+
+}
+.action .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 238, 5);
+    font-weight: 500;
+    transition: 0.5s;
+}
+.action .menu ul li:hover a{
+    color: red;
+
+}
+/* STORY PAGE */
+.story{
+    margin-left: 80px;
+    padding: 30px;
+}
+#environment{
+    padding: 20px;
+}
+#pollution{
+    padding: 20px;
+}
+#water{
+    padding: 20px;
+}
+#trees{
+    padding: 20px;
+}
+#ftwater{
+    padding: 20px;
+}
+.left, .right{
+    color: rgb(7, 218, 46);
+}
+.pdf{
+    text-align: center;
+    color: rgb(64, 208, 12);
+}
+.pdfimg{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.pdfimg h3{
+          color: red;
+}
+
+.txt{
+    text-align: center;
+    margin-top: 40px;
+}
+.txt h1{
+    color: rgb(255, 115, 0);
+}
+
+.pdfimg h3:hover{
+    color: rgb(49, 246, 49);
+}
+.had{
+    text-align: center;
+    color: green;
+    font-family: fantasy;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.probox{
+    
+    margin-top: 40px;
+    margin-left: 320px;
+    position: absolute;
+
+}
+.pimg{
+    border: 2px solid rgb(255, 255, 255);
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+    margin-top: -70px;
+    
+}
+.probox h2{
+    float: left;
+    margin-left: 200px;
+    margin-top: -60px;
+    color: rgb(5, 187, 248);
+}
+:root{
+    --bg: rgb(245, 242, 242);
+}
+.social{
+      margin-top: 10px;
+      margin-bottom: -130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      background: var(--bg);
+}
+#sgap{
+  margin-top: 20px;
+}
+#flw{
+    
+    position: relative;
+    display: flex;
+    gap: 80px;
+}
+#flw li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#flw li:hover{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+#flw li::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+#flw li:hover::before{
+    inset: 0px;
+}
+#flw li::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+
+}
+#flw li a{
+         position: relative;
+         text-decoration: none;
+         color: var(--clr);
+         z-index: 10;
+         font-size: 2em;
+         transition: 0.5s;
+}
+#flw li:hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.probox h1{
+    text-align: center;
+    margin-top: 25px;
+
+}
+@media only screen and  (max-width:320px){
+    .abt h4{
+        margin-right: 30px;
+    }
+    .action{
+        top: 7px;
+        right: 60px;
+        
+    }
+    .probox{
+        margin-left: -10px;
+    }
+    .probox h2{
+        margin-left: 180px;
+    }
+    .himg img{
+        width: 290px;
+        height: 160px;
+    }
+    #flw{
+        display: inline-block;
+        margin-bottom: 80px;
+    }
+    .social{
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    .intro{
+        margin-left: 2px;
+        width: 310px;
+        
+    }
+
+    
+}
+.intro{
+    border: 2px solid rgba(59, 57, 57);
+    width: 400px;
+    height: 290px;
+    margin-left: 320px;
+    margin-top: 550px;
+    
+}
+.abt p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(34, 33, 33);
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.abt img{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.abt h4{
+    float: right;
+    margin-right: 130px;
+    margin-top: 18px;
+    font-size: 20px;
+    color: rgb(59, 57, 57);
+}
+
+    
+
+
+
+.follow h2{
+    text-align: center;
+    color: #fff;
+
+}
+
+
+#list{
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+#list li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#list li:hover{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+#list li::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+#list li:hover::before{
+    inset: 0px;
+}
+#list li::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+
+}
+#list li a{
+         position: relative;
+         text-decoration: none;
+         color: var(--clr);
+         z-index: 10;
+         font-size: 2em;
+         transition: 0.5s;
+}
+#list li:hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.prod{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 10px;
+}
+.ptxt{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 251, 3);
+}
+/* ----------------------mediaquery for logo_----------- */
+
+@media only screen and  (max-width:320px){
+    .prod{
+        display: inline-block;
+            }
+.logo img{
+    margin-top: -20px;
+    margin-left: -5px;
+    width: 70px;
+}
+.text{
+    flex-basis: 50%;
+    min-width: 300px;
+    font-size: 15px;
+
+}
+.text h1{
+    margin-top: -40px;
+    flex-basis: 50%;
+    min-width: 300px;
+    font-size: 35px;
+}
+.bll{
+    
+    flex-basis: 50%;
+    width: 100%;
+    font-size: 1px;
+    margin-left: -30px;
+
+}
+.had{
+    font-size: 25px;
+    flex-basis: 50%;
+    margin-top: 40px;
+    margin-left: -50px;
+}
+.vid{
+    width:50%;
+    height: auto;
+    flex-basis: 30%;
+    margin-left: -100px;
+}
+#environment, #water, #trees, #pollution{
+    width: 310px;
+    height: auto;
+}
+.pdf{
+    margin-top: 70px;
+}
+.pdfimg{
+    margin-left: 5px;
+}
+.txt h1{
+    margin-top: 60px;
+}
+.txt img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+    
+
+
+

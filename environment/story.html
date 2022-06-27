@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Story | Environment</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="logo.jpeg" width="170px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <section class="story">
+        <div class="had">WATCH & LEARN</div>
+        <!-- Save environment -->
+        <div class="vid">
+        <h2 class="left">Animated: SAVE ENVIRONMENT</h2>
+        <iframe id="environment" width="560" height="315" src="https://www.youtube.com/embed/oZLBGXLrXcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- pollution -->
+        <h2 class="right">Animated:POLLUTION</h2>
+        <iframe id="pollution" width="560" height="315" src="https://www.youtube.com/embed/ju7Xp8zYpGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Imptance of trees- quick support -->
+            <h2 class="left">Animated: IMPORTANCE OF TREES</h2>
+        <iframe id="trees" width="560" height="315" src="https://www.youtube.com/embed/tqzg15Iq6QI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- save water -->
+            <h2 class="right">Animated:SAVE WATER</h2>
+            <iframe id="water" width="560" height="315" src="https://www.youtube.com/embed/CfG9eG-o8O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            
+
+    </section>
+            
+        </div>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "500px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                    
+                }
+            }
+        </script>
+    
+</body>
+</html>

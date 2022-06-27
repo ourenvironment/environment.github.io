@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Environment | Profile</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"> <img src="logo.jpeg" width="170px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            
+            <div class="action">
+                <div class="profile" onclick="menuToggle();"><img src="IMG_oygln6.jpg" alt="">
+                </div>
+                <div class="menu">
+                  <h3>Himanshu Anand<br> <span>Website designer</span></h3>
+                  <ul>
+                      <li><img src="user.png" width="50px"><a href="profile.html">Admin profile</a></li>
+                      <li><img src="trolley.png" width="50px"><a href="product.html">Aff. Products</a></li>
+                      <li><img src="send.png" width="50px"><a href="contact.html">Contact</a></li>
+                      <li><img src="about.png" width="50px"><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+            </div>
+            
+            <script>
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.menu');
+                toggleMenu.classList.toggle('active')
+            }
+            
+            </script>
+        </div>
+       
+    </div>
+    
+    <div class="probox">
+        <h1>Admin Profile</h1>
+        <div class="himg">
+        <img src="web.jpeg" width="695px" height="305px">
+    </div>
+
+        <div class="pimg">
+            <img src="IMG_oygln6.jpg" width="100%">
+               
+        </div>
+        <h2>Himanshu Anand</h2>
+    </div>
+    <div class="intro">
+        <div class="sft">
+        <div class="abt">
+            <p> About</p>
+            <hr>
+            <img src="office.svg" width="30px">
+            <h4>Work from Home</h4>
+            <br><hr>
+            <img src="school.svg" width="30px">
+            <h4>Study at RSM PS</h4>
+            <br><hr>
+            <img src="location.svg" width="22px">
+            <h4>Supaul , Bihar</h4>
+            <br><hr>
+            <img src="home.svg" width="30px">
+            <h4>Lives in Supaul</h4>
+            <br><hr>
+            <img src="follower.svg" width="25px">
+            <h4>10k Follower</h4>
+        </div>
+    </div>
+        
+             <div class="social">
+                <ul id="list">
+                    <li style="--clr:#1879f8;">
+                        <a href="https://mobile.twitter.com/aanand6himanshu"><i class="fa-brands fa-twitter"></i></a>
+                        
+                        
+                    </li>
+                    <li style="--clr:#f60b0b;">
+                        <a href="https://youtube.com/channel/UC_bO1BwLwBFw-Uxep7WV7-Q"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    
+                    <li style="--clr:#f2275a;">
+                        <a href="https://www.instagram.com/himanshu03anand/"><i><i class="fa-brands fa-instagram"></i></i></a>
+                    </li>
+                    <li style="--clr:#fc1010;">
+                        <a href="https://in.pinterest.com/himanshu03anand/"><i><i class="fa-brands fa-pinterest"></i></i></a>
+                    </li>
+                </ul>
+                </div> 
+
+        
+        </div>
+    
+    
+    
+           
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "500px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+                
+            }
+        }
+    </script>
+</body>
+</html>
